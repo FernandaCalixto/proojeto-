@@ -1,0 +1,42 @@
+<!-- agenda.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Compromissos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Agenda de Compromissos</h1>
+        <nav>
+            <a href="index.html">🏠 Início</a>
+            <a href="servicos.html">🦷 Serviços</a>
+            <a href="contas.html">💰 Contas</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Adicionar Compromisso</h2>
+            <form id="form-agenda">
+                <label>Data:<br><input type="date" id="data"></label><br>
+                <label>Descrição:<br><input type="text" id="descricao" placeholder="Ex: Reunião com cliente"></label><br>
+                <label>Observações:<br><textarea id="observacoes" placeholder="Anotações adicionais"></textarea></label><br>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Compromissos Salvos</h2>
+            <ul id="lista-agenda"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
